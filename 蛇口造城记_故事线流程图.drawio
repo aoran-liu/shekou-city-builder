@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Claude" version="24.0.0" type="device">
+  <diagram name="蛇口造城记 · 完整故事线" id="shekou-story">
+    <mxGraphModel dx="3000" dy="2000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="6000" pageHeight="5000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="legend" value="&lt;b&gt;图例 Legend&lt;/b&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;font color=&quot;#6C8EBF&quot;&gt;■&lt;/font&gt; 蓝色实线 = 固定叙事事件&lt;br/&gt;&lt;font color=&quot;#6C8EBF&quot;&gt;■&lt;/font&gt; 蓝色虚线 = 条件叙事事件 (需满足条件才出现)&lt;br/&gt;&lt;font color=&quot;#82B366&quot;&gt;■&lt;/font&gt; 绿色实线 = 固定小游戏&lt;br/&gt;&lt;font color=&quot;#82B366&quot;&gt;■&lt;/font&gt; 绿色虚线 = 条件小游戏&lt;br/&gt;&lt;font color=&quot;#9673A6&quot;&gt;■&lt;/font&gt; 紫色 = 幕间总结&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;- - -&lt;/font&gt; 红色虚线箭头 = Flag依赖关系&lt;br/&gt;&lt;font color=&quot;#CC6600&quot;&gt;→ flag_name&lt;/font&gt; = 该选项设置的Flag&lt;br/&gt;&lt;font color=&quot;#E74C3C&quot;&gt;✕ flag_name&lt;/font&gt; = 该选项移除的Flag&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;b&gt;条件类型:&lt;/b&gt;&lt;br/&gt;flags: xxx = 需要有xxx标记&lt;br/&gt;economy≥N = 经济指标≥N&lt;br/&gt;support≤N = 民心指标≤N&lt;br/&gt;OR = 满足其一即可" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;align=left;verticalAlign=top;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="300" height="420" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="第一幕 · 1979年 · 蛮荒开局" style="swimlane;startSize=45;fillColor=#1A1A2E;fontColor=#FFFFFF;fontSize=16;fontStyle=1;rounded=1;arcSize=6;strokeColor=#6B5530;" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="540" height="3000" as="geometry"/>
+        </mxCell>
+        <mxCell id="101" value="&lt;b&gt;[叙事] yuan_arrival&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;序幕：袁庚抵达蛇口&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 先修路通电&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ infrastructure_first&lt;/font&gt;&lt;br/&gt;② 直接招商引资&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ rush_investment, yuan_bold&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="10">
+          <mxGeometry x="30" y="60" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f101_102" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="101" target="102">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="102" value="&lt;b&gt;[小游戏] blast_mountain&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;炸山填海&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;炸山填海迷你游戏 (GSAP粒子爆破)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="10">
+          <mxGeometry x="30" y="280" width="480" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="f102_103" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="102" target="103">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="103" value="&lt;b&gt;[小游戏] reform_allocation&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;改革点数分配&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;资源分配: 港口/工业/住房/商业" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="10">
+          <mxGeometry x="30" y="400" width="480" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="f103_104" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="103" target="104">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="104" value="&lt;b&gt;[叙事] hk_businessman&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;港商来访&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 周永昌&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 欣然接受&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ accepted_hk_investment&lt;/font&gt;&lt;br/&gt;② 暂缓考虑&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ rejected_hk_investment&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="10">
+          <mxGeometry x="30" y="520" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f104_105" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="104" target="105">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="105" value="&lt;b&gt;[叙事] wage_reform&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;工人工资制度改革&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 大胆推行计件工资&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ full_wage_reform, yuan_bold&lt;/font&gt;&lt;br/&gt;② 小范围试点&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ pilot_wage_reform&lt;/font&gt;&lt;br/&gt;③ 维持现状&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ rejected_wage_reform&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="10">
+          <mxGeometry x="30" y="740" width="480" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="f105_106" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="105" target="106">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="106" value="&lt;b&gt;[叙事] first_factory&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;第一家合资工厂开工&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 周永昌&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: accepted_hk_investment&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 全力支持&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ factory_favorable_policy&lt;/font&gt;&lt;br/&gt;② 按规矩办事&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="10">
+          <mxGeometry x="30" y="1020" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f106_107" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="106" target="107">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="107" value="&lt;b&gt;[叙事] worker_complaint&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;工人消极怠工&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 李大成&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: rejected_wage_reform&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 紧急推行奖金制度&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ emergency_wage_reform&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#E74C3C&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;✕ rejected_wage_reform&lt;/font&gt;&lt;br/&gt;② 加强思想教育&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ political_education&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="10">
+          <mxGeometry x="30" y="1240" width="480" height="230" as="geometry"/>
+        </mxCell>
+        <mxCell id="f107_108" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="107" target="108">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="108" value="&lt;b&gt;[叙事] beijing_inspection&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;北京来人调查&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 赵处长&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; economy≥60 OR politics≤30&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 据实汇报成果&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ passed_inspection&lt;/font&gt;&lt;br/&gt;② 坦诚困难&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ asked_support&lt;/font&gt;&lt;br/&gt;③ 低调应对&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ played_safe_inspection&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="10">
+          <mxGeometry x="30" y="1490" width="480" height="270" as="geometry"/>
+        </mxCell>
+        <mxCell id="f108_109" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="108" target="109">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="109" value="&lt;b&gt;[叙事] typhoon_crisis&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;台风袭击蛇口&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 全员撤离&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ saved_workers&lt;/font&gt;&lt;br/&gt;② 加固工地&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ saved_materials&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="10">
+          <mxGeometry x="30" y="1780" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f109_110" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="109" target="110">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="110" value="&lt;b&gt;[叙事] year_end_review&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;年终述职&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 展望未来&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ inspiring_speech&lt;/font&gt;&lt;br/&gt;② 务实总结&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="10">
+          <mxGeometry x="30" y="2000" width="480" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="111" value="&lt;b&gt;1979年度总结&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="10">
+          <mxGeometry x="30" y="2200" width="480" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="f110_111" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="10" source="110" target="111">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="第二幕 · 1980-1981年 · 改革深水区" style="swimlane;startSize=45;fillColor=#1A1A2E;fontColor=#FFFFFF;fontSize=16;fontStyle=1;rounded=1;arcSize=6;strokeColor=#6B5530;" vertex="1" parent="1">
+          <mxGeometry x="920" y="10" width="540" height="3000" as="geometry"/>
+        </mxCell>
+        <mxCell id="201" value="&lt;b&gt;[叙事] time_is_money&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;&quot;时间就是金钱&quot;&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 大胆竖起来&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ erected_slogan, yuan_bold&lt;/font&gt;&lt;br/&gt;② 先在内部用&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ internal_slogan&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="20">
+          <mxGeometry x="30" y="60" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f201_202" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="201" target="202">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="202" value="&lt;b&gt;[小游戏] slogan_puzzle&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;竖起标语牌&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: erected_slogan&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;标语拼图迷你游戏" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="20">
+          <mxGeometry x="30" y="280" width="480" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="f202_203" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="202" target="203">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="203" value="&lt;b&gt;[叙事] shekou_newspaper&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;创办《蛇口通讯》&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 办！允许工人投稿&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ has_newspaper, open_press&lt;/font&gt;&lt;br/&gt;② 办标准宣传刊物&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ has_newspaper&lt;/font&gt;&lt;br/&gt;③ 现在不办&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="20">
+          <mxGeometry x="30" y="420" width="480" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="f203_204" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="203" target="204">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="204" value="&lt;b&gt;[叙事] housing_crisis&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;工人宿舍不足&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 李大成&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; support ≤ 50&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 紧急拨款建宿舍&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ built_housing&lt;/font&gt;&lt;br/&gt;② 向港方申请援助&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ hk_funded_housing&lt;/font&gt;&lt;br/&gt;③ 动员工人克服困难&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="20">
+          <mxGeometry x="30" y="690" width="480" height="230" as="geometry"/>
+        </mxCell>
+        <mxCell id="f204_205" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="204" target="205">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="205" value="&lt;b&gt;[叙事] factory_boom&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;外资工厂潮&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 周永昌&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: accepted_hk_investment&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 全部接纳&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ factory_boom, rapid_growth&lt;/font&gt;&lt;br/&gt;② 择优引进&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ selective_investment&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="20">
+          <mxGeometry x="30" y="940" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f205_206" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="205" target="206">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="206" value="&lt;b&gt;[叙事] cadre_conflict&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;干部抵制改革&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 王书记&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: full_wage_reform&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 干部也改！&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ cadre_reform, yuan_bold&lt;/font&gt;&lt;br/&gt;② 给干部加津贴&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ cadre_allowance&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="20">
+          <mxGeometry x="30" y="1160" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f206_207" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="206" target="207">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="207" value="&lt;b&gt;[叙事] talent_recruit&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;全国招聘人才&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; innovation ≥ 50&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 全国公开招聘&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ open_recruitment, talent_pool&lt;/font&gt;&lt;br/&gt;② 通过组织渠道&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ official_recruitment&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="20">
+          <mxGeometry x="30" y="1380" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f207_208" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="207" target="208">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="208" value="&lt;b&gt;[叙事] smuggling_scandal&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;走私风波&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 赵处长&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; economy ≥ 70&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 严厉查处&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ anti_smuggling&lt;/font&gt;&lt;br/&gt;② 内部调查&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ quiet_handling&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="20">
+          <mxGeometry x="30" y="1600" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f208_209" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="208" target="209">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="209" value="&lt;b&gt;[小游戏] second_reform&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;第二轮改革分配&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;资源分配: 港口/工业/住房/商业" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="20">
+          <mxGeometry x="30" y="1820" width="480" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="f209_210" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="209" target="210">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="210" value="&lt;b&gt;[叙事] cultural_clash&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;港深文化冲突&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 张文华&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 组织文化交流&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ cultural_exchange&lt;/font&gt;&lt;br/&gt;② 制定管理规范&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ unified_rules&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="20">
+          <mxGeometry x="30" y="1940" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f210_211" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="210" target="211">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="211" value="&lt;b&gt;[叙事] political_storm&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;政治风暴&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 赵处长&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; politics ≤ 25&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 据理力争&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ defended_reform&lt;/font&gt;&lt;br/&gt;② 暂时收敛&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ laid_low&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="20">
+          <mxGeometry x="30" y="2160" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="212" value="&lt;b&gt;1980-1981年总结&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="20">
+          <mxGeometry x="30" y="2380" width="480" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="f211_212" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="20" source="211" target="212">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="30" value="第三幕 · 1982-1983年 · 民主试验" style="swimlane;startSize=45;fillColor=#1A1A2E;fontColor=#FFFFFF;fontSize=16;fontStyle=1;rounded=1;arcSize=6;strokeColor=#6B5530;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="10" width="540" height="3000" as="geometry"/>
+        </mxCell>
+        <mxCell id="301" value="&lt;b&gt;[小游戏] democratic_election&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;蛇口民主选举&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;投票选举迷你游戏 (3候选人)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="30">
+          <mxGeometry x="30" y="60" width="480" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="f301_302" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="301" target="302">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="302" value="&lt;b&gt;[叙事] youth_debate&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;蛇口青年大辩论&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 陈晓薇&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: has_newspaper&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 支持公开辩论&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ open_debate, yuan_bold&lt;/font&gt;&lt;br/&gt;② 引导讨论方向&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ guided_debate&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="30">
+          <mxGeometry x="30" y="200" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f302_303" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="302" target="303">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="303" value="&lt;b&gt;[叙事] education_reform&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;教育培训中心&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 职业技术培训&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ vocational_training&lt;/font&gt;&lt;br/&gt;② 通识教育为主&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ general_education&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="30">
+          <mxGeometry x="30" y="420" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f303_304" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="303" target="304">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="304" value="&lt;b&gt;[叙事] labor_union&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;工会改革&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 李大成&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: full_wage_reform&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 支持工会独立运作&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ independent_union, yuan_bold&lt;/font&gt;&lt;br/&gt;② 保持在党的领导下&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ party_led_union&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="30">
+          <mxGeometry x="30" y="640" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f304_305" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="304" target="305">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="305" value="&lt;b&gt;[叙事] real_estate_start&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;蛇口第一块商品房&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; economy ≥ 60&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 开发商品房&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ commercial_housing&lt;/font&gt;&lt;br/&gt;② 坚持福利分房&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ welfare_housing&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="30">
+          <mxGeometry x="30" y="860" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f305_306" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="305" target="306">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="306" value="&lt;b&gt;[叙事] anti_corruption&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;反腐倡廉&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 公开查处&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ public_anti_corruption&lt;/font&gt;&lt;br/&gt;② 内部处理&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ quiet_anti_corruption&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="30">
+          <mxGeometry x="30" y="1080" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f306_307" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="306" target="307">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="307" value="&lt;b&gt;[叙事] hk_return_talk&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;港商续约谈判&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 周永昌&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; flags: accepted_hk_investment&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 给予更优惠条件&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ favorable_renewal&lt;/font&gt;&lt;br/&gt;② 坚持原有条件&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ firm_renewal&lt;/font&gt;&lt;br/&gt;③ 争取更有利条件&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ tough_negotiation&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="30">
+          <mxGeometry x="30" y="1300" width="480" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="f307_308" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="307" target="308">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="308" value="&lt;b&gt;[叙事] innovation_center&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;科技创新中心&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; innovation ≥ 60&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 大力投入&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ innovation_center, tech_leader&lt;/font&gt;&lt;br/&gt;② 循序渐进&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ tech_import&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="30">
+          <mxGeometry x="30" y="1570" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f308_309" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="308" target="309">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="309" value="&lt;b&gt;[叙事] worker_welfare&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;工人福利危机&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 李大成&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; support ≤ 35&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 全面改善福利&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ improved_welfare&lt;/font&gt;&lt;br/&gt;② 分步实施&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ gradual_welfare&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="30">
+          <mxGeometry x="30" y="1790" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f309_310" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="309" target="310">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="310" value="&lt;b&gt;[小游戏] third_reform&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;第三轮改革分配&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;资源分配: 港口/工业/住房/商业" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="30">
+          <mxGeometry x="30" y="2010" width="480" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="f310_311" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="310" target="311">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="311" value="&lt;b&gt;[叙事] political_review&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;中央政策评估&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 赵处长&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 全面展示改革成果&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ ready_for_deng&lt;/font&gt;&lt;br/&gt;② 实事求是&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ honest_review&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="30">
+          <mxGeometry x="30" y="2130" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="312" value="&lt;b&gt;1982-1983年总结&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="30">
+          <mxGeometry x="30" y="2350" width="480" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="f311_312" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="30" source="311" target="312">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="40" value="第四幕 · 1984年 · 伟人来了" style="swimlane;startSize=45;fillColor=#1A1A2E;fontColor=#FFFFFF;fontSize=16;fontStyle=1;rounded=1;arcSize=6;strokeColor=#6B5530;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="10" width="540" height="3000" as="geometry"/>
+        </mxCell>
+        <mxCell id="401" value="&lt;b&gt;[叙事] preparation&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;视察前准备&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 精心准备&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ careful_preparation&lt;/font&gt;&lt;br/&gt;② 保持原样&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ authentic_display&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="40">
+          <mxGeometry x="30" y="60" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f401_402" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="401" target="402">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="402" value="&lt;b&gt;[小游戏] deng_visit&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;邓小平视察蛇口&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;视察路线迷你游戏 (选3/5地点)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="40">
+          <mxGeometry x="30" y="280" width="480" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="f402_403" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="402" target="403">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="403" value="&lt;b&gt;[叙事] deng_conversation&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;与邓小平对话&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 最大收获是证明改革是对的&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ reform_answer&lt;/font&gt;&lt;br/&gt;② 最大收获是人的变化&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ people_answer&lt;/font&gt;&lt;br/&gt;③ 最大收获是找到一条路&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ path_answer&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="40">
+          <mxGeometry x="30" y="420" width="480" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="f403_404" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="403" target="404">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="404" value="&lt;b&gt;[叙事] inscription&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;邓小平题词&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;font color=&quot;#B85450&quot;&gt;&lt;b&gt;条件:&lt;/b&gt; economy≥50 AND support≥50&lt;/font&gt;&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 将题词立碑&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ inscription_monument&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="40">
+          <mxGeometry x="30" y="700" width="480" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="f404_405" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="404" target="405">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="405" value="&lt;b&gt;[叙事] national_attention&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;全国瞩目&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 倾囊相授&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ shared_experience&lt;/font&gt;&lt;br/&gt;② 继续深化改革&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ continued_reform&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="40">
+          <mxGeometry x="30" y="900" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="f405_406" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="405" target="406">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="406" value="&lt;b&gt;[叙事] future_plan&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;蛇口未来规划&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 从制造走向科技创新&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ tech_future&lt;/font&gt;&lt;br/&gt;② 打造现代化宜居新城&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ livable_city&lt;/font&gt;&lt;br/&gt;③ 全面深化改革&lt;br/&gt;&lt;font color=&quot;#CC6600&quot; style=&quot;font-size:10px&quot;&gt;&amp;nbsp;&amp;nbsp;→ institutional_reform&lt;/font&gt;&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="40">
+          <mxGeometry x="30" y="1120" width="480" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="f406_407" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="406" target="407">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="407" value="&lt;b&gt;[叙事] yuan_reflection&lt;/b&gt;&lt;br/&gt;&lt;font style=&quot;font-size:14px&quot;&gt;&lt;b&gt;袁庚独白&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;角色: 袁庚&lt;br/&gt;&lt;hr size=&quot;1&quot;/&gt;① 继续前行&lt;br/&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;align=left;verticalAlign=top;spacing=8;overflow=hidden;" vertex="1" parent="40">
+          <mxGeometry x="30" y="1400" width="480" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="408" value="&lt;b&gt;最终篇章 · 1984年&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="40">
+          <mxGeometry x="30" y="1560" width="480" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="f407_408" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="407" target="408">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="endHeader" value="&lt;b&gt;五种结局 (根据最终四维指标决定)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="40">
+          <mxGeometry x="30" y="1660" width="480" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="501" value="&lt;b&gt;结局A: 改革先锋&lt;/b&gt;&lt;br/&gt;条件: 四项均≥50&lt;br/&gt;蛇口成为全国改革开放标杆" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="40">
+          <mxGeometry x="30" y="1700" width="480" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="502" value="&lt;b&gt;结局B: 经济奇迹&lt;/b&gt;&lt;br/&gt;条件: economy≥70, 其余≥30&lt;br/&gt;经济腾飞但社会发展失衡" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCE5FF;strokeColor=#004085;fontSize=11;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="40">
+          <mxGeometry x="30" y="1800" width="480" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="503" value="&lt;b&gt;结局C: 政治样板&lt;/b&gt;&lt;br/&gt;条件: politics≥70, 其余≥30&lt;br/&gt;政治安全但改革动力不足" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6D8DB;strokeColor=#6C757D;fontSize=11;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="40">
+          <mxGeometry x="30" y="1900" width="480" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="504" value="&lt;b&gt;结局D: 民心丰碑&lt;/b&gt;&lt;br/&gt;条件: support≥70, 其余≥30&lt;br/&gt;民众拥护但发展缓慢" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#856404;fontSize=11;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="40">
+          <mxGeometry x="30" y="2000" width="480" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="505" value="&lt;b&gt;结局E: 改革夭折&lt;/b&gt;&lt;br/&gt;条件: 任一项 &lt; 20&lt;br/&gt;某维度崩溃，改革实验终止" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8D7DA;strokeColor=#721C24;fontSize=11;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="40">
+          <mxGeometry x="30" y="2100" width="480" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="f408_endHeader" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;strokeWidth=1.5;" edge="1" parent="40" source="408" target="endHeader">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="trans0" value="进入第二幕" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=3;strokeColor=#6B5530;fontColor=#6B5530;fontSize=12;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="111" target="201">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="trans1" value="进入第三幕" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=3;strokeColor=#6B5530;fontColor=#6B5530;fontSize=12;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="212" target="301">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="trans2" value="进入第四幕" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=3;strokeColor=#6B5530;fontColor=#6B5530;fontSize=12;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="312" target="401">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d1" value="accepted_hk_investment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="104" target="106">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d2" value="accepted_hk_investment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="104" target="205">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d3" value="accepted_hk_investment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="104" target="307">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d4" value="rejected_wage_reform" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="105" target="107">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d5" value="full_wage_reform" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="105" target="206">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d6" value="full_wage_reform" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="105" target="304">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d7" value="erected_slogan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="201" target="202">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="d8" value="has_newspaper" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;dashed=1;dashPattern=8 8;strokeColor=#B85450;fontColor=#B85450;fontSize=10;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="203" target="302">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
