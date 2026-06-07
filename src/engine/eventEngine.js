@@ -104,14 +104,24 @@ export function determineEnding(state) {
     };
   }
 
-  const boldFlags = (state.flags || []).filter(f => f === 'yuan_bold').length > 0;
   const hasSlogan = state.flags.includes('erected_slogan');
   const hasCMB = state.flags.includes('cmb_founded');
   const hasPingan = state.flags.includes('pingan_founded');
   const hasDengImpressed = state.flags.includes('deng_impressed');
   const defendedValues = state.flags.includes('defended_market_values');
 
-  if (economy >= 50 && politics >= 50 && support >= 50 && innovation >= 50) {
+  const focusStats = [
+    { key: 'politics', val: politics },
+    { key: 'support', val: support },
+    { key: 'innovation', val: innovation },
+  ].sort((a, b) => b.val - a.val);
+
+  const topFocus = focusStats[0];
+  const bottomFocus = focusStats[2];
+  const allAbove50 = economy >= 50 && politics >= 50 && support >= 50 && innovation >= 50;
+  const weakCount = [politics, support, innovation].filter(s => s < 50).length;
+
+  if (allAbove50 && (topFocus.val - bottomFocus.val) < 20) {
     const extras = [];
     if (hasCMB) extras.push('招商银行');
     if (hasPingan) extras.push('平安保险');
@@ -129,7 +139,7 @@ export function determineEnding(state) {
     };
   }
 
-  if (economy >= 70 && politics >= 30 && support >= 30 && innovation >= 30) {
+  if (weakCount >= 2) {
     return {
       id: 'B',
       title: '经济奇迹',
@@ -141,40 +151,42 @@ export function determineEnding(state) {
     };
   }
 
-  if (politics >= 70 && economy >= 30 && support >= 30 && innovation >= 30) {
-    return {
-      id: 'C',
-      title: '政治样板',
-      subtitle: '安全着陆，步履蹒跚',
-      text: '蛇口的每一步改革都在安全线内。上级对蛇口的工作非常满意，从未收到过一封批评信。\n\n但袁庚心里清楚：太过谨慎，让蛇口错过了很多机会。隔壁的深圳已经一日千里，而蛇口还在"稳步推进"。\n\n"改革，有时候需要的不是稳妥，而是勇气。"袁庚在退休后的回忆录里写道，"我不后悔谨慎，但我后悔的是——在该大胆的时候，我犹豫了。"',
-      tone: 'reflective',
-      historyImage: '/images/history/shekou-panorama-today.jpg',
-      historyCaption: '蛇口全景',
-    };
-  }
+  if (topFocus.val - focusStats[1].val >= 15) {
+    if (topFocus.key === 'politics') {
+      return {
+        id: 'C',
+        title: '政治样板',
+        subtitle: '安全着陆，步履蹒跚',
+        text: '蛇口的每一步改革都在安全线内。上级对蛇口的工作非常满意，从未收到过一封批评信。\n\n但袁庚心里清楚：太过谨慎，让蛇口错过了很多机会。隔壁的深圳已经一日千里，而蛇口还在"稳步推进"。\n\n"改革，有时候需要的不是稳妥，而是勇气。"袁庚在退休后的回忆录里写道，"我不后悔谨慎，但我后悔的是——在该大胆的时候，我犹豫了。"',
+        tone: 'reflective',
+        historyImage: '/images/history/shekou-panorama-today.jpg',
+        historyCaption: '蛇口全景',
+      };
+    }
 
-  if (support >= 70 && economy >= 30 && politics >= 30 && innovation >= 30) {
-    return {
-      id: 'D',
-      title: '民心丰碑',
-      subtitle: '工人的乐园',
-      text: '蛇口的工人们过上了全国最好的日子。宿舍宽敞明亮，食堂饭菜可口，社会保险齐全，民主选举照常举行。工人们发自内心地热爱这片土地。\n\n但外面的人却说：蛇口像个大院，什么都好，就是不像改革开放。经济数据平平，创新乏力——幸福的代价，是错过了一个时代。\n\n袁庚说："让工人过上好日子，本身就是改革的目的。但只有好日子还不够——我们还要给后代留下一条更好的路。"',
-      tone: 'warm',
-      historyImage: '/images/history/workers-cycling-1980s.jpg',
-      historyCaption: '80年代蛇口的工人们',
-    };
-  }
+    if (topFocus.key === 'support') {
+      return {
+        id: 'D',
+        title: '民心丰碑',
+        subtitle: '工人的乐园',
+        text: '蛇口的工人们过上了全国最好的日子。宿舍宽敞明亮，食堂饭菜可口，社会保险齐全，民主选举照常举行。工人们发自内心地热爱这片土地。\n\n但外面的人却说：蛇口像个大院，什么都好，就是不像改革开放。经济数据平平，创新乏力——幸福的代价，是错过了一个时代。\n\n袁庚说："让工人过上好日子，本身就是改革的目的。但只有好日子还不够——我们还要给后代留下一条更好的路。"',
+        tone: 'warm',
+        historyImage: '/images/history/workers-cycling-1980s.jpg',
+        historyCaption: '80年代蛇口的工人们',
+      };
+    }
 
-  if (innovation >= 70 && economy >= 30 && politics >= 30 && support >= 30) {
-    return {
-      id: 'F',
-      title: '制度先驱',
-      subtitle: '改革之火，照亮前路',
-      text: '蛇口也许不是最富有的，但它是中国最有创造力的地方。从4分钱改革到股份制银行，从劳动合同到社会保险——每一项制度创新都走在了全国前面。\n\n蛇口的价值不在于它创造了多少财富，而在于它证明了另一种可能——在中国，市场经济是可行的，制度创新是可能的，改革是有希望的。\n\n这些从蛇口走出的制度，后来在全国生根发芽，深刻改变了十四亿中国人的生活。',
-      tone: 'triumph',
-      historyImage: '/images/history/shekou-museum-interior.jpg',
-      historyCaption: '蛇口改革开放博物馆——记录制度创新的历程',
-    };
+    if (topFocus.key === 'innovation') {
+      return {
+        id: 'F',
+        title: '制度先驱',
+        subtitle: '改革之火，照亮前路',
+        text: '蛇口也许不是最富有的，但它是中国最有创造力的地方。从4分钱改革到股份制银行，从劳动合同到社会保险——每一项制度创新都走在了全国前面。\n\n蛇口的价值不在于它创造了多少财富，而在于它证明了另一种可能——在中国，市场经济是可行的，制度创新是可能的，改革是有希望的。\n\n这些从蛇口走出的制度，后来在全国生根发芽，深刻改变了十四亿中国人的生活。',
+        tone: 'triumph',
+        historyImage: '/images/history/shekou-museum-interior.jpg',
+        historyCaption: '蛇口改革开放博物馆——记录制度创新的历程',
+      };
+    }
   }
 
   return {
