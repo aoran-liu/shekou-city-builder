@@ -18,7 +18,7 @@ export const act2Events = [
     choices: [
       {
         label: '向《人民日报》内参反映，据理力争',
-        effects: { economy: 5, politics: -10, support: 10, innovation: 15 },
+        effects: { economy: 5, politics: -3, support: 10, innovation: 15 },
         setFlags: ['fought_for_reform', 'yuan_bold'],
         news: '袁庚就超产奖问题向《人民日报》内参反映情况',
         historyImage: '/images/history/overproduction-bonus-approval.jpeg',
@@ -27,7 +27,7 @@ export const act2Events = [
       },
       {
         label: '服从上级决定，另寻出路',
-        effects: { economy: -5, politics: 10, support: -5, innovation: 0 },
+        effects: { economy: -5, politics: 10, support: -3, innovation: 0 },
         setFlags: ['accepted_cancellation'],
         news: '蛇口暂停超产奖制度，探索其他激励方式',
         consequence: '袁庚没有正面抗争，但他也没有放弃。他悄悄在厂区推行了一套"综合评定"制度——名义上不是奖金，实际上还是多劳多得。\n\n上面的人没察觉，工人的干劲慢慢恢复了一些。但袁庚心里清楚：不从根本上解决分配问题，蛇口走不远。',
@@ -46,7 +46,7 @@ export const act2Events = [
     choices: [
       {
         label: '面向全国高校，大规模招聘',
-        effects: { economy: 8, politics: -5, support: 5, innovation: 12 },
+        effects: { economy: 8, politics: -3, support: 5, innovation: 12 },
         setFlags: ['national_recruitment'],
         news: '蛇口工业区面向全国公开招聘，首开先河',
         historyImage: '/images/history/workers-cycling-1980s.jpg',
@@ -55,7 +55,7 @@ export const act2Events = [
       },
       {
         label: '内部培养为主，稳步引进',
-        effects: { economy: 3, politics: 5, support: 3, innovation: 3 },
+        effects: { economy: 3, politics: 5, support: 3, innovation: 0 },
         setFlags: ['internal_training'],
         news: '蛇口工业区加强内部人才培养',
         consequence: '袁庚决定先把现有的人培养好。工业区办起了夜校和技术培训班，请来香港的工程师手把手教技术。\n\n效果是有的，但速度慢。隔壁深圳的人才虹吸效应越来越强，蛇口有些着急了。',
@@ -74,7 +74,7 @@ export const act2Events = [
     choices: [
       {
         label: '竖起标语牌，让全国都看到',
-        effects: { economy: 5, politics: -12, support: 8, innovation: 15 },
+        effects: { economy: 5, politics: -5, support: 8, innovation: 15 },
         setFlags: ['erected_slogan', 'yuan_bold'],
         news: '"时间就是金钱，效率就是生命"巨型标语在蛇口竖立',
         historyImage: '/images/history/slogan-original-photo.jpg',
@@ -83,7 +83,7 @@ export const act2Events = [
       },
       {
         label: '先在内部说说，不公开',
-        effects: { economy: 2, politics: 5, support: 2, innovation: 3 },
+        effects: { economy: 2, politics: 8, support: 0, innovation: 0 },
         setFlags: ['kept_low_profile'],
         news: '蛇口内部倡导效率优先理念',
         consequence: '袁庚把这四句话在工业区管委会的内部会议上说了，大家点头称是。但没有标语，没有宣传，外面的人一无所知。\n\n蛇口的效率确实在提高，但少了那块标语牌，蛇口也少了一面旗帜。很多年后袁庚说："那时候，我犹豫了。"',
@@ -117,7 +117,7 @@ export const act2Events = [
     choices: [
       {
         label: '全面推行聘任制，一视同仁',
-        effects: { economy: 8, politics: -10, support: 5, innovation: 12 },
+        effects: { economy: 8, politics: -3, support: 5, innovation: 12 },
         setFlags: ['full_cadre_reform'],
         news: '蛇口工业区全面实行干部聘任制，打破终身制',
         historyImage: '/images/history/wage-reform-approval.png',
@@ -126,7 +126,7 @@ export const act2Events = [
       },
       {
         label: '新任干部试行，老干部保留',
-        effects: { economy: 5, politics: 3, support: 3, innovation: 5 },
+        effects: { economy: 5, politics: 5, support: 3, innovation: 0 },
         setFlags: ['partial_cadre_reform'],
         news: '蛇口对新任干部试行聘任制',
         consequence: '袁庚做了折中：老干部的位置不动，但新上任的一律签聘任合同。\n\n老干部们松了口气，新人们也有了动力。方案虽然不够彻底，但至少没引起大的反弹。',
@@ -145,7 +145,7 @@ export const act2Events = [
     choices: [
       {
         label: '全员实行合同制',
-        effects: { economy: 10, politics: -8, support: -3, innovation: 10 },
+        effects: { economy: 10, politics: -5, support: -3, innovation: 10 },
         setFlags: ['full_labor_contract'],
         news: '蛇口率先实行全员劳动合同制，打破铁饭碗',
         historyImage: '/images/history/labor-contract-1985.jpg',
@@ -154,7 +154,7 @@ export const act2Events = [
       },
       {
         label: '新员工签合同，老员工自愿',
-        effects: { economy: 5, politics: 3, support: 5, innovation: 5 },
+        effects: { economy: 5, politics: 5, support: 3, innovation: 0 },
         setFlags: ['partial_labor_contract'],
         news: '蛇口对新入职员工实行劳动合同制',
         consequence: '新来的人签合同，老员工可签可不签。大多数老员工选择了不签——铁饭碗多好，为什么要换瓷碗？\n\n但新人们的积极性明显更高。一年后，签了合同的员工平均效率比没签的高出30%。',
@@ -173,7 +173,7 @@ export const act2Events = [
     choices: [
       {
         label: '创办《蛇口通讯》，允许批评声音',
-        effects: { economy: 0, politics: -8, support: 12, innovation: 10 },
+        effects: { economy: 0, politics: -3, support: 12, innovation: 10 },
         setFlags: ['has_newspaper', 'press_freedom'],
         news: '《蛇口通讯》创刊，鼓励工人表达真实声音',
         historyImage: '/images/history/shekou-newspaper.jpeg',
@@ -182,7 +182,7 @@ export const act2Events = [
       },
       {
         label: '办内部简报就行，不必搞批评',
-        effects: { economy: 0, politics: 5, support: 3, innovation: 0 },
+        effects: { economy: 3, politics: 8, support: 0, innovation: 0 },
         setFlags: ['internal_bulletin'],
         news: '蛇口工业区发行内部工作简报',
         consequence: '内部简报按期印刷，内容都是工作通知和政策传达。没有争议，也没有活力。\n\n工人们看一眼就扔了。有人私下说："跟别的单位有什么区别？"蛇口的开放精神，少了一个重要的载体。',
@@ -205,7 +205,7 @@ export const act2Events = [
     choices: [
       {
         label: '继续扩大招商，来者不拒',
-        effects: { economy: 15, politics: -8, support: 3, innovation: 5 },
+        effects: { economy: 15, politics: -5, support: 3, innovation: 5 },
         setFlags: ['aggressive_investment'],
         news: '蛇口外资企业数量突破20家，经济高速增长',
         historyImage: '/images/history/kaida-workers.jpg',
@@ -214,7 +214,7 @@ export const act2Events = [
       },
       {
         label: '控制节奏，择优引进',
-        effects: { economy: 8, politics: 5, support: 5, innovation: 8 },
+        effects: { economy: 10, politics: 5, support: 0, innovation: 0 },
         news: '蛇口实行选择性招商，注重项目质量',
         historyImage: '/images/history/sanyo-factory.jpg',
         historyCaption: '蛇口三洋电机——技术含量较高的外资企业',
@@ -234,7 +234,7 @@ export const act2Events = [
     choices: [
       {
         label: '全面推行职务工资制',
-        effects: { economy: 10, politics: -8, support: 5, innovation: 10 },
+        effects: { economy: 10, politics: -3, support: 5, innovation: 10 },
         setFlags: ['full_wage_system'],
         news: '蛇口废除等级工资制，全面实行岗位浮动工资',
         historyImage: '/images/history/wage-slip.png',
@@ -243,7 +243,7 @@ export const act2Events = [
       },
       {
         label: '部分岗位试行，循序渐进',
-        effects: { economy: 5, politics: 3, support: 5, innovation: 5 },
+        effects: { economy: 5, politics: 5, support: 3, innovation: 0 },
         news: '蛇口在部分岗位试行工资浮动制度',
         consequence: '试点在码头和几家工厂展开。效果是有的，但"只有试点才能涨工资"引发了不在试点范围内的工人不满。\n\n袁庚意识到：改革要么全面推开，要么别做。半吊子只会制造更多矛盾。',
       },
@@ -261,7 +261,7 @@ export const act2Events = [
     choices: [
       {
         label: '大手笔投入，建设一流深水港',
-        effects: { economy: 12, politics: -5, support: 0, innovation: 8 },
+        effects: { economy: 12, politics: -3, support: 0, innovation: 8 },
         setFlags: ['chiwan_large'],
         news: '赤湾深水港大规模建设启动',
         historyImage: '/images/history/port-under-construction.jpg',
@@ -270,7 +270,7 @@ export const act2Events = [
       },
       {
         label: '分期建设，量力而行',
-        effects: { economy: 5, politics: 5, support: 3, innovation: 3 },
+        effects: { economy: 5, politics: 8, support: 0, innovation: 0 },
         setFlags: ['chiwan_phased'],
         news: '赤湾深水港一期工程稳步推进',
         consequence: '赤湾港一期工程按计划推进，规模适中但质量扎实。虽然不如最初设想的宏大，但风险也小得多。\n\n袁庚说："建港口就像改革——步子可以小一点，但方向不能错。"',
@@ -301,7 +301,7 @@ export const act2Events = [
       },
       {
         label: '做出适当妥协，换取时间',
-        effects: { economy: -5, politics: 15, support: -3, innovation: -5 },
+        effects: { economy: -5, politics: 15, support: -5, innovation: -3 },
         setFlags: ['political_compromise'],
         news: '蛇口工业区调整部分改革措施',
         consequence: '袁庚暂停了几项最激进的改革举措，增加了政治学习的频次，在报告中多用了一些"坚持四项基本原则"的措辞。\n\n省里的压力缓解了，但蛇口内部的改革派失望了。有人私下说："袁总，你让步了。"',

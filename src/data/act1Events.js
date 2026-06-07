@@ -61,7 +61,7 @@ export const act1Events = [
     choices: [
       {
         label: '大胆推行，多劳多得',
-        effects: { economy: 12, politics: -15, support: 10, innovation: 15 },
+        effects: { economy: 12, politics: -8, support: 10, innovation: 15 },
         setFlags: ['full_wage_reform', 'yuan_bold'],
         news: '蛇口率先实行"4分钱"超产奖励，打破大锅饭！',
         historyImage: '/images/history/overproduction-bonus-approval.jpeg',
@@ -100,7 +100,7 @@ export const act1Events = [
     choices: [
       {
         label: '热情接待，欢迎投资合作',
-        effects: { economy: 15, politics: -10, support: 5, innovation: 5 },
+        effects: { economy: 15, politics: -5, support: 5, innovation: 5 },
         setFlags: ['accepted_hk_investment'],
         news: '蛇口工业区引入首批港资，开创中外合作先河',
         historyImage: '/images/history/hk-businessmen-1980.jpeg',

@@ -33,7 +33,7 @@ export const act3Events = [
       },
       {
         label: '企业内部福利，暂不搞社保',
-        effects: { economy: 3, politics: 0, support: 5, innovation: 0 },
+        effects: { economy: 5, politics: 3, support: -3, innovation: 0 },
         news: '蛇口采用企业内部福利制度',
         consequence: '袁庚在工业区内设立了福利基金，解决工人的基本保障问题。比社会保险简单得多，但也意味着一旦离开蛇口，就什么保障都没有了。\n\n有工人说："这是把我们拴在蛇口。"袁庚知道这不是长久之计。',
       },
@@ -60,7 +60,7 @@ export const act3Events = [
       },
       {
         label: '改造为商务接待中心',
-        effects: { economy: 10, politics: 3, support: 3, innovation: 3 },
+        effects: { economy: 12, politics: 5, support: 0, innovation: 0 },
         setFlags: ['minghua_business'],
         news: '明华轮改造为蛇口商务接待中心',
         consequence: '明华轮被改造成了一座高端商务酒店和会议中心。外商来蛇口考察，终于有了一个体面的接待场所。\n\n实用是实用，但少了点浪漫。有人惋惜地说："这么漂亮的船，光用来谈生意，太可惜了。"',
@@ -88,7 +88,7 @@ export const act3Events = [
       },
       {
         label: '实事求是，展示成绩也不回避问题',
-        effects: { economy: 0, politics: 5, support: 5, innovation: 3 },
+        effects: { economy: 0, politics: 8, support: 3, innovation: 0 },
         setFlags: ['honest_report'],
         news: '蛇口以务实态度迎接邓小平视察',
         consequence: '袁庚决定不搞形式主义。不粉刷门面、不清场管控——让邓小平看到一个真实的蛇口，包括还在建设中的工地、正在争论的改革方案、以及工人们真实的生活状态。\n\n"如果连邓公面前都不敢说实话，那蛇口的改革精神就是假的。"',
@@ -128,7 +128,7 @@ export const act3Events = [
       },
       {
         label: '低调汇报，不过分邀功',
-        effects: { economy: 3, politics: 10, support: 3, innovation: 3 },
+        effects: { economy: 3, politics: 12, support: 0, innovation: 0 },
         setFlags: ['deng_neutral', 'deng_visited'],
         news: '邓小平视察蛇口，做出温和评价',
         historyImage: '/images/history/deng-visit-shekou-1984.jpg',
@@ -176,7 +176,7 @@ export const act3Events = [
     choices: [
       {
         label: '大胆建言，呼吁推广蛇口经验',
-        effects: { economy: 5, politics: -5, support: 5, innovation: 10 },
+        effects: { economy: 5, politics: -3, support: 5, innovation: 10 },
         setFlags: ['central_bold_proposal'],
         news: '袁庚在中央书记处会议上介绍蛇口经验，引发强烈反响',
         historyImage: '/images/history/yuan-geng-portrait.jpg',
@@ -185,7 +185,7 @@ export const act3Events = [
       },
       {
         label: '稳健汇报，只讲蛇口做了什么',
-        effects: { economy: 3, politics: 8, support: 3, innovation: 3 },
+        effects: { economy: 3, politics: 10, support: 0, innovation: 0 },
         setFlags: ['central_cautious'],
         news: '袁庚向中央汇报蛇口工业区建设情况',
         consequence: '袁庚的汇报中规中矩，只讲事实不下结论。与会者听完表示"值得关注"，但没有形成推广共识。\n\n蛇口的经验停留在了"个案"层面。袁庚后来说："我应该再大胆一些。"',
@@ -216,7 +216,7 @@ export const act3Events = [
       },
       {
         label: '以蛇口建设成就为主题',
-        effects: { economy: 5, politics: 8, support: 5, innovation: 3 },
+        effects: { economy: 5, politics: 10, support: 0, innovation: 0 },
         setFlags: ['tiananmen_construction'],
         news: '蛇口彩车展示工业区建设成就通过天安门',
         consequence: '蛇口彩车上展示的是工业区的建设模型和经济数据。中规中矩，但也体面。\n\n电视转播的画面一闪而过，大多数观众都没留下特别深的印象。袁庚后来说："如果当时把那句口号挂上去，效果会完全不一样。"',

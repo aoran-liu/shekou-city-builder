@@ -11,7 +11,7 @@ export const act4Events = [
     choices: [
       {
         label: '全面推行住房商品化',
-        effects: { economy: 10, politics: -5, support: -3, innovation: 12 },
+        effects: { economy: 10, politics: -3, support: -3, innovation: 12 },
         setFlags: ['full_housing_reform'],
         news: '蛇口率先推行住房商品化，打破福利分房制度',
         historyImage: '/images/history/housing-bitaoyuan-1981.jpg',
@@ -20,7 +20,7 @@ export const act4Events = [
       },
       {
         label: '先建住房公积金制度，再逐步推行',
-        effects: { economy: 5, politics: 5, support: 5, innovation: 5 },
+        effects: { economy: 5, politics: 8, support: 3, innovation: 0 },
         setFlags: ['housing_fund_first'],
         news: '蛇口建立住房公积金制度',
         historyImage: '/images/history/sihai-apartment.jpeg',
@@ -41,7 +41,7 @@ export const act4Events = [
     choices: [
       {
         label: '试行企业股份制，让工人当"老板"',
-        effects: { economy: 12, politics: -10, support: 8, innovation: 15 },
+        effects: { economy: 12, politics: -3, support: 8, innovation: 15 },
         setFlags: ['stock_reform'],
         news: '蛇口试行企业股份制改革，新中国第一家股份制企业诞生',
         historyImage: '/images/history/shekou-museum-interior.jpg',
@@ -50,7 +50,7 @@ export const act4Events = [
       },
       {
         label: '条件不成熟，先做其他改革',
-        effects: { economy: 3, politics: 8, support: 3, innovation: 0 },
+        effects: { economy: 3, politics: 10, support: 0, innovation: -3 },
         news: '蛇口暂缓股份制改革，专注其他领域',
         consequence: '袁庚权衡再三，决定把股份制的事放一放。"一口吃不成胖子，先把眼前的改革做扎实。"\n\n但他在日记里写道："股份制是大方向，迟早要搞。我们只是还没准备好。"',
       },
@@ -68,7 +68,7 @@ export const act4Events = [
     choices: [
       {
         label: '全力支持招商银行创立',
-        effects: { economy: 15, politics: -5, support: 5, innovation: 15 },
+        effects: { economy: 15, politics: -3, support: 5, innovation: 15 },
         setFlags: ['cmb_founded'],
         news: '招商银行在蛇口成立——中国第一家股份制商业银行',
         historyImage: '/images/history/shekou-museum-exhibits.jpg',
@@ -77,7 +77,7 @@ export const act4Events = [
       },
       {
         label: '风险太大，利用现有银行就好',
-        effects: { economy: 3, politics: 5, support: 0, innovation: -5 },
+        effects: { economy: 3, politics: 8, support: 0, innovation: -3 },
         news: '蛇口继续依托现有银行体系',
         consequence: '袁庚最终没有推动银行的成立。工业区的资金结算继续通过国有银行办理，手续繁琐、效率低下。\n\n几年后，隔壁深圳成立了自己的商业银行。袁庚看着新闻，心里五味杂陈。',
       },
@@ -95,7 +95,7 @@ export const act4Events = [
     choices: [
       {
         label: '支持青年反驳，捍卫市场价值观',
-        effects: { economy: 5, politics: -15, support: 15, innovation: 15 },
+        effects: { economy: 5, politics: -5, support: 15, innovation: 12 },
         setFlags: ['defended_market_values', 'shekou_storm_bold'],
         news: '"蛇口风波"——蛇口青年与北京教育专家激烈辩论，轰动全国',
         historyImage: '/images/history/slogan-youth-1980.jpeg',
@@ -104,7 +104,7 @@ export const act4Events = [
       },
       {
         label: '调和矛盾，维护现场稳定',
-        effects: { economy: 0, politics: 8, support: 3, innovation: -3 },
+        effects: { economy: 0, politics: 10, support: -3, innovation: -3 },
         setFlags: ['maintained_stability'],
         news: '蛇口青年座谈会在温和气氛中结束',
         historyImage: '/images/history/shekou-historian-exhibition.jpg',
@@ -113,7 +113,7 @@ export const act4Events = [
       },
       {
         label: '批评青年态度，维护专家权威',
-        effects: { economy: -5, politics: 10, support: -15, innovation: -10 },
+        effects: { economy: -5, politics: 10, support: -10, innovation: -5 },
         setFlags: ['traditional_values'],
         news: '蛇口青年座谈会中，领导批评部分青年态度不端正',
         consequence: '工业区领导站出来批评了几位言辞激烈的青年，表示"专家是客人，要尊重前辈"。\n\n年轻人们沉默了。但沉默不代表认同。从那以后，蛇口的年轻人变得更加沉默——不是因为想通了，而是因为失望了。\n\n"原来蛇口也跟外面一样。"有人在私下说。',
@@ -138,7 +138,7 @@ export const act4Events = [
     choices: [
       {
         label: '大力支持，提供一切便利',
-        effects: { economy: 10, politics: -3, support: 3, innovation: 12 },
+        effects: { economy: 10, politics: -3, support: 3, innovation: 10 },
         setFlags: ['pingan_founded'],
         news: '平安保险在蛇口成立——中国第一家股份制保险公司',
         historyImage: '/images/history/shekou-modern-aerial.jpg',
@@ -147,7 +147,7 @@ export const act4Events = [
       },
       {
         label: '保持观望，让市场决定',
-        effects: { economy: 3, politics: 3, support: 0, innovation: 3 },
+        effects: { economy: 3, politics: 5, support: 0, innovation: 0 },
         news: '蛇口对新设保险公司保持关注',
         consequence: '蛇口没有给予特殊支持，但也没有阻拦。平安保险在市场的风浪中自生自灭。\n\n好在马明哲是个硬骨头。即使没有太多帮助，平安保险也慢慢站稳了脚跟。但起步比历史上更加艰难。',
       },
@@ -174,7 +174,7 @@ export const act4Events = [
       },
       {
         label: '低调发展，做好自己',
-        effects: { economy: 3, politics: 5, support: 3, innovation: 3 },
+        effects: { economy: 3, politics: 8, support: 0, innovation: 0 },
         news: '蛇口工业区继续深耕自身发展',
         consequence: '袁庚选择不张扬，继续把精力放在蛇口自身的建设上。来参观的人照样接待，但不搞宣传、不出风头。\n\n"做好自己的事，比什么宣传都管用。"',
       },
@@ -201,7 +201,7 @@ export const act4Events = [
       },
       {
         label: '巩固现有成果，稳中求进',
-        effects: { economy: 3, politics: 5, support: 3, innovation: 0 },
+        effects: { economy: 3, politics: 8, support: 0, innovation: -3 },
         setFlags: ['consolidate'],
         news: '蛇口进入稳步发展新阶段',
         consequence: '"打了这么多硬仗，也该歇歇了。"袁庚对身边的人说。但他心里清楚，改革如逆水行舟，不进则退。\n\n蛇口的成就是实实在在的。但袁庚总觉得少了点什么——也许是当年那股一往无前的劲头。\n\n他在日记本上写下："我老了。但蛇口不能老。"',

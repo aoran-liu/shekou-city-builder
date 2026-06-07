@@ -87,12 +87,12 @@ export function getActSummaryText(act) {
 export function determineEnding(state) {
   const { economy, politics, support, innovation } = state.stats;
 
-  if (economy < 20 || politics < 20 || support < 20 || innovation < 20) {
+  if (economy < 15 || politics < 15 || support < 15 || innovation < 15) {
     const collapsed = [];
-    if (economy < 20) collapsed.push('经济');
-    if (politics < 20) collapsed.push('政治');
-    if (support < 20) collapsed.push('民心');
-    if (innovation < 20) collapsed.push('创新');
+    if (economy < 15) collapsed.push('经济');
+    if (politics < 15) collapsed.push('政治');
+    if (support < 15) collapsed.push('民心');
+    if (innovation < 15) collapsed.push('创新');
     return {
       id: 'E',
       title: '改革夭折',
@@ -119,9 +119,8 @@ export function determineEnding(state) {
   const topFocus = focusStats[0];
   const bottomFocus = focusStats[2];
   const allAbove50 = economy >= 50 && politics >= 50 && support >= 50 && innovation >= 50;
-  const weakCount = [politics, support, innovation].filter(s => s < 50).length;
 
-  if (allAbove50 && (topFocus.val - bottomFocus.val) < 20) {
+  if (allAbove50 && (topFocus.val - bottomFocus.val) < 12) {
     const extras = [];
     if (hasCMB) extras.push('招商银行');
     if (hasPingan) extras.push('平安保险');
@@ -139,7 +138,7 @@ export function determineEnding(state) {
     };
   }
 
-  if (weakCount >= 2) {
+  if (economy >= 55 && Math.min(politics, support, innovation) < 25) {
     return {
       id: 'B',
       title: '经济奇迹',
@@ -151,7 +150,7 @@ export function determineEnding(state) {
     };
   }
 
-  if (topFocus.val - focusStats[1].val >= 15) {
+  if (topFocus.val >= 50 && topFocus.val - bottomFocus.val >= 12) {
     if (topFocus.key === 'politics') {
       return {
         id: 'C',
@@ -164,7 +163,21 @@ export function determineEnding(state) {
       };
     }
 
-    if (topFocus.key === 'support') {
+    if (topFocus.key === 'support' || topFocus.key === 'innovation') {
+      const hasDeepReform = state.flags.includes('full_labor_contract') && state.flags.includes('full_wage_system');
+
+      if (innovation > support || (innovation === support && hasDeepReform)) {
+        return {
+          id: 'F',
+          title: '制度先驱',
+          subtitle: '改革之火，照亮前路',
+          text: '蛇口也许不是最富有的，但它是中国最有创造力的地方。从4分钱改革到股份制银行，从劳动合同到社会保险——每一项制度创新都走在了全国前面。\n\n蛇口的价值不在于它创造了多少财富，而在于它证明了另一种可能——在中国，市场经济是可行的，制度创新是可能的，改革是有希望的。\n\n这些从蛇口走出的制度，后来在全国生根发芽，深刻改变了十四亿中国人的生活。',
+          tone: 'triumph',
+          historyImage: '/images/history/shekou-museum-interior.jpg',
+          historyCaption: '蛇口改革开放博物馆——记录制度创新的历程',
+        };
+      }
+
       return {
         id: 'D',
         title: '民心丰碑',
@@ -173,18 +186,6 @@ export function determineEnding(state) {
         tone: 'warm',
         historyImage: '/images/history/workers-cycling-1980s.jpg',
         historyCaption: '80年代蛇口的工人们',
-      };
-    }
-
-    if (topFocus.key === 'innovation') {
-      return {
-        id: 'F',
-        title: '制度先驱',
-        subtitle: '改革之火，照亮前路',
-        text: '蛇口也许不是最富有的，但它是中国最有创造力的地方。从4分钱改革到股份制银行，从劳动合同到社会保险——每一项制度创新都走在了全国前面。\n\n蛇口的价值不在于它创造了多少财富，而在于它证明了另一种可能——在中国，市场经济是可行的，制度创新是可能的，改革是有希望的。\n\n这些从蛇口走出的制度，后来在全国生根发芽，深刻改变了十四亿中国人的生活。',
-        tone: 'triumph',
-        historyImage: '/images/history/shekou-museum-interior.jpg',
-        historyCaption: '蛇口改革开放博物馆——记录制度创新的历程',
       };
     }
   }
